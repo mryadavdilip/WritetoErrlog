@@ -34,9 +34,9 @@ Partial Class WritetoErrlog
         Me.createFile_btn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
         Me.createFile_btn.Cursor = System.Windows.Forms.Cursors.Hand
         Me.createFile_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.createFile_btn.Location = New System.Drawing.Point(317, 263)
+        Me.createFile_btn.Location = New System.Drawing.Point(307, 280)
         Me.createFile_btn.Name = "createFile_btn"
-        Me.createFile_btn.Size = New System.Drawing.Size(177, 82)
+        Me.createFile_btn.Size = New System.Drawing.Size(177, 65)
         Me.createFile_btn.TabIndex = 0
         Me.createFile_btn.Text = "Add Message"
         Me.createFile_btn.UseVisualStyleBackColor = False
@@ -44,22 +44,24 @@ Partial Class WritetoErrlog
         'StatusLable
         '
         Me.StatusLable.AutoSize = True
-        Me.StatusLable.Location = New System.Drawing.Point(313, 376)
+        Me.StatusLable.Location = New System.Drawing.Point(155, 380)
         Me.StatusLable.Name = "StatusLable"
-        Me.StatusLable.Size = New System.Drawing.Size(0, 20)
+        Me.StatusLable.Size = New System.Drawing.Size(64, 20)
         Me.StatusLable.TabIndex = 1
+        Me.StatusLable.Text = "Status: "
         '
         'MessageBox
         '
-        Me.MessageBox.Location = New System.Drawing.Point(317, 126)
+        Me.MessageBox.Location = New System.Drawing.Point(159, 126)
+        Me.MessageBox.Multiline = True
         Me.MessageBox.Name = "MessageBox"
-        Me.MessageBox.Size = New System.Drawing.Size(177, 26)
+        Me.MessageBox.Size = New System.Drawing.Size(471, 148)
         Me.MessageBox.TabIndex = 2
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(313, 103)
+        Me.Label1.Location = New System.Drawing.Point(155, 103)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(115, 20)
         Me.Label1.TabIndex = 3

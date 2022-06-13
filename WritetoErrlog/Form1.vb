@@ -10,10 +10,11 @@
             file.WriteLine("(" + DateTime.Now.ToString + "): " + msg)
             file.Close()
             status = True
+            MessageBox.Clear()
         Catch ex As Exception
             status = False
         Finally
-            StatusLable.Text = status.ToString
+            StatusLable.Text = "Status: " + status.ToString
         End Try
     End Sub
 
@@ -24,5 +25,9 @@
     Private Sub createFile_btn_Click(sender As Object, e As EventArgs) Handles createFile_btn.Click
         message = MessageBox.Text
         Input(message, status)
+    End Sub
+
+    Private Sub MessageBox_TextChanged(sender As Object, e As EventArgs) Handles MessageBox.TextChanged
+
     End Sub
 End Class
