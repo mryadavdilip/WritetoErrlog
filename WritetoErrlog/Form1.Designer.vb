@@ -27,6 +27,7 @@ Partial Class WritetoErrlog
         Me.StatusLable = New System.Windows.Forms.Label()
         Me.MessageBox = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.FileExistence = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'createFile_btn
@@ -67,11 +68,20 @@ Partial Class WritetoErrlog
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "Write Message"
         '
+        'FileExistence
+        '
+        Me.FileExistence.AutoSize = True
+        Me.FileExistence.Location = New System.Drawing.Point(420, 380)
+        Me.FileExistence.Name = "FileExistence"
+        Me.FileExistence.Size = New System.Drawing.Size(0, 20)
+        Me.FileExistence.TabIndex = 4
+        '
         'WritetoErrlog
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(800, 417)
+        Me.Controls.Add(Me.FileExistence)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.MessageBox)
         Me.Controls.Add(Me.StatusLable)
@@ -89,4 +99,5 @@ Partial Class WritetoErrlog
     Friend WithEvents StatusLable As Label
     Friend WithEvents MessageBox As TextBox
     Friend WithEvents Label1 As Label
+    Friend WithEvents FileExistence As Label
 End Class
